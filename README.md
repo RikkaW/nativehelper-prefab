@@ -1,10 +1,18 @@
 # NativeHelper Prefab
 
-Prefab package for AOSP libnativehelper_header_only.
+Prefab package for headers only utilities from AOSP libnativehelper/header_only_include and bionic/libc/private.
 
 ## Integration
 
 This is a [Prefab](https://google.github.io/prefab/) library, so you will need to enable it in your project (requires Android Gradle Plugin 4.1+):
+
+gradle.properties:
+
+```properties
+# Header only package is not supported by the defualt version of prefab
+# https://github.com/google/prefab/issues/122
+android.prefabVersion=1.1.2
+```
 
 ```gradle
 android {

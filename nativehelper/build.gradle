@@ -32,7 +32,7 @@ android {
     }
     prefab {
         nativehelper_header_only {
-            headers "src/main/cpp/header_only_include"
+            headers "src/main/cpp/include"
         }
     }
 }
